@@ -35,9 +35,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
 .wrapper{
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
-  border: 1px solid;
+  border: 1px solid #000;
+}
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
