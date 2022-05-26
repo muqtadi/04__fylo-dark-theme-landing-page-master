@@ -1,5 +1,16 @@
+
+
+@import './header';
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.wrapper{
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: 1px solid;
 }
