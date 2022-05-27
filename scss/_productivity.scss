@@ -1,0 +1,49 @@
+.productivity{
+  background-color: rgb(24, 30, 42);
+  transform: translateY(-3px);
+  padding: 60px 0;
+
+  .productivity__img{max-width: 600px; width: 100%;}
+  .productivity__content{
+    padding-top: 60px;
+    .productivity__title{font-size: 20px; font-family: 'Raleway'; margin-bottom: 20px;}
+    .productivity__paragraph{color: rgb(162, 167, 173); margin-bottom: 20px;}
+    .productivity__link{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(70, 131, 132);
+      border-bottom: 2px solid;
+      width: 180px;
+      height: 40px;
+      text-decoration: none;
+
+      svg{width: 25px; height: 30px; path{transform: scale(1.8, 2); padding: 10px;}}
+    }
+  }
+}
+// __________________________________________TABLET DEVICE
+@media(min-width: 768px){
+  .productivity{
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .productivity__content{text-align: center; max-width: 600px; padding-top: 60px;}
+      .productivity__content .productivity__link{margin: 0 auto;}
+    }
+  }
+}
+// ___________________________________________LAPTOP DEVICE
+@media(min-width: 1024px){
+  .productivity{
+    .container{
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .productivity__content{text-align: left; max-width: 520px; padding: 0 0 0 20px;}
+      .productivity__content .productivity__link{margin-left: 0;}
+    }
+  }
+}
