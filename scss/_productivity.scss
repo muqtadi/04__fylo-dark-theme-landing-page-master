@@ -6,6 +6,7 @@
   .productivity__img{max-width: 600px; width: 100%;}
   .productivity__content{
     padding-top: 60px;
+
     .productivity__title{font-size: 20px; font-family: 'Raleway'; margin-bottom: 20px;}
     .productivity__paragraph{color: rgb(162, 167, 173); margin-bottom: 20px;}
     .productivity__link{
@@ -42,8 +43,13 @@
       flex-direction: row;
       justify-content: space-evenly;
 
-      .productivity__content{text-align: left; max-width: 520px; padding: 0 0 0 20px;}
-      .productivity__content .productivity__link{margin-left: 0;}
+      .productivity__content{
+        text-align: left;
+        max-width: 520px;
+        padding: 0 0 0 20px;
+
+        .productivity__link{margin-left: 0; &:hover{color: rgb(162, 167, 173); use{fill: #fff}}}
+      }
     }
   }
 }

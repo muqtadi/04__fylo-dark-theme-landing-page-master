@@ -355,6 +355,12 @@
   .productivity .container .productivity__content .productivity__link {
     margin-left: 0;
   }
+  .productivity .container .productivity__content .productivity__link:hover {
+    color: #a2a7ad;
+  }
+  .productivity .container .productivity__content .productivity__link:hover use {
+    fill: #fff;
+  }
 }
 
 * {
