@@ -365,8 +365,10 @@
 
 .team {
   background-color: #181e2a;
-  padding: 120px 0;
+  padding: 120px 0 360px;
   color: #a2a7ad;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .team .container {
@@ -452,6 +454,101 @@
   }
   .team .container .card {
     max-width: 400px;
+  }
+}
+
+.sign__up .container .sign__up__card {
+  max-width: 900px;
+  min-height: 200px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: #21293c;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sign__up .container .sign__up__card .sign__up__title {
+  font-size: 20px;
+  font-family: 'Raleway';
+  margin-bottom: 20px;
+}
+
+.sign__up .container .sign__up__card .sign__up__copy {
+  color: #a2a7ad;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.sign__up .container .sign__up__card .mail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.sign__up .container .sign__up__card .mail__item {
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+}
+
+.sign__up .container .sign__up__card .mail__input {
+  padding-left: 15px;
+  outline: none;
+}
+
+.sign__up .container .sign__up__card .mail__input__error {
+  color: #e96666;
+  text-align: left;
+  padding: 5px 0 0 20px;
+}
+
+.sign__up .container .sign__up__card .mail__btn {
+  margin-top: 20px;
+  background-color: #70c7df;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .sign__up .container .sign__up__card .sign__up__title {
+    font-size: 32px;
+  }
+  .sign__up .container .sign__up__card .sign__up__copy {
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+  .sign__up .container .sign__up__card .mail {
+    -ms-grid-columns: 500px auto;
+        grid-template-columns: 500px auto;
+    max-width: 750px;
+    grid-column-gap: 20px;
+  }
+  .sign__up .container .sign__up__card .mail__input {
+    max-width: 500px;
+    width: 100%;
+    padding-left: 30px;
+  }
+  .sign__up .container .sign__up__card .mail__btn {
+    max-width: 220px;
+    width: 100%;
+    margin: 0;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .sign__up .container .sign__up__card .mail__btn:hover {
+    background-color: #93d5e7;
   }
 }
 
